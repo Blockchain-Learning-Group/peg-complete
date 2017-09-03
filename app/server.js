@@ -10,35 +10,14 @@ app.get('/', (req, res) => {
 })
 
 /**
-* Load all users saved in hub storage.
+ * Add a resource to the hub.
  */
-app.get('/loadUsers', async (req, res) => {
-  res.send(await etherUtils.getAllUserDataAndBLGBalances())
-})
-
-/**
- * Load all resources saved in hub storage.
- */
-app.get('/loadResources', async (req, res) => {
-  res.send(await etherUtils.getAllResources())
-})
-
-/**
- * Load 10 latest events.
- */
-app.get('/loadEvents', async (req, res) => {
-  res.send(await etherUtils.getLatestEvents())
-})
-
-/**
- * Load 10 latest events.
- */
-app.post('/resourceLiked/:resource/:userIp', async (req, res) => {
-  const response = await etherUtils.likeResource(req.params.resource, req.params.userIp)
+app.post('/addResource/:resource', async (req, res) => {
+  const response = await etherUtils.addResource(req.params.resource)
   res.send(response)
 })
 
-const server = app.listen(8081, () => {
+const server = app.listen(9191, () => {
    const host = server.address().address
    const port = server.address().port
 

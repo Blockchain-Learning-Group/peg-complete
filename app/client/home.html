@@ -1,169 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>BLG Hub</title>
+
+    <title>BLG Peg</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-    <!-- Plugin CSS -->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link href="css/customStyle.css" rel="stylesheet">
-
-    <!-- Bootstrap table -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-table.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/hub.css" rel="stylesheet">
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Vendor -->
+    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
-    <script src="vendor/bootstrap/js/bootstrap-table.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap-table-locale-all.min.js"></script>
-
+    <!-- Custom scripts for this template -->
+    <script src="js/hub.min.js"></script>
     <script src="js/web3.min.js"></script>
-
-    <!-- Custom -->
-    <script src="js/guiTools.js"></script>
     <script src="js/home.js"></script>
   </head>
 
-  <body class="fixed-nav" id="page-top">
+  <body id="page-top">
 
-    <!-- NAV BARS -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="https://blockchainlearninggroup.com">Blockchain Learning Group</a>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-
-        <!-- SIDE NAV BAR -->
-        <ul class="navbar-nav navbar-sidenav">
-          <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">
-                Dashboard
-              </span>
-            </a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav sidenav-toggler">
-          <li class="nav-item">
-            <a class="nav-link text-center" id="sidenavToggler">
-              <i class="fa fa-fw fa-angle-left"></i>
-            </a>
-          </li>
-        </ul>
-        <!-- END SIDE NAV BAR -->
-
-        <!-- TOP NAV BAR -->
-        <ul class="navbar-nav ml-auto"></ul>
-        <!-- END TOP NAV BAR -->
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="https://blockchainlearninggroup.com">Blockchain Learning Group</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Community Hub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <!-- NAV BARS -->
 
-    <div class="content-wrapper py-3">
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">Welcome to BLG's DApp Development Fundamentals Course!</h1>
+              <p>
+                <strong>
+                  This is a template to build your own peg into the BLG community hub.
+                </strong>
 
-      <div class="container-fluid">
+              </br>
 
-        <!-- Breadcrumbs -->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="https://blockchainlearninggroup.com">BLG</a>
-          </li>
-          <li class="breadcrumb-item active">Developer Commuinty Hub</li>
-        </ol>
+              </p>
+              <a href="#contribute" class="btn btn-outline btn-xl js-scroll-trigger">Contribute!</a>
 
-        <div class="row">
+            </div>
+          </div>
 
-          <!-- Resources and contributors -->
-          <div class="col-lg-7">
-            <div class="col-lg-12">
-
-              <!-- Resources -->
-              <div class="mb-0 mt-4">
-                <i class="fa fa-newspaper-o"></i>
-                Resources
-              </div>
-
-              <hr class="mt-2">
-
-              <!-- Top Resources -->
-              <div class="col-lg-12" id="topResources" style="max-height:300px; overflow-y:scroll"></div>
-              <!-- END Resources -->
-
-              <!-- Contributors -->
-              <div class="mb-0 mt-4">
-                <i class="fa fa-table"></i>
-                Top Contributors
-              </div>
-
-              <hr class="mt-2">
-
-              <div class="card-body">
-                <div class="table-responsive" style="max-height:300px; overflow-y:scroll">
-
-                  <!-- TODO: define max height and allow over flow for scroll potentially pagination -->
-                  <table id="participantsTable" class="table table-bordered" width="100%">
-                    <thead>
-                      <tr>
-                        <th>User Name</th>
-                        <th>Position</th>
-                        <th>Location</th>
-                        <th>Reputation</th>
-                      </tr>
-                    </thead>
-                  </table>
-
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div>
+                <div class="device">
+                  <div class="screen">
+                    <img src="img/community-hub.png" class="img-fluid" alt="" height="500px">
+                  </div>
                 </div>
               </div>
-              <div class="card-footer small text-muted" id="userTableTimestamp"></div>
-              <!-- END Contributors -->
-
             </div>
           </div>
 
-          <!-- News Feed -->
-          <div class="col-lg-5" style="max-height:785px; overflow-y:scroll">
-            <div class="card mb-3">
-              <div class="card-header">
-                <i class="fa fa-bell-o"></i>
-                News Feed
-              </div>
-
-              <div class="list-group list-group-flush small" id="newsFeed"/>
-            </div>
-          </div>
-          <!-- END News Feed -->
-
+        </div>
       </div>
-      <!-- /.container-fluid -->
+    </header>
 
-    </div>
-    <!-- /.content-wrapper -->
+    <section class="contribute bg-primary text-center" id="contribute">
+      <div class="container">
 
-    <!-- Scroll to Top Button -->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading">Contribute to the BLG Community!</h2>
+            <p>Share a useful develop resource.</p>
+
+            <form class="form-inline" id="addResourceForm">
+                <label class="sr-only" for="inlineFormInputGroup">Resource URL</label>
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0" style="width:75%">
+                  <div class="input-group-addon">URL</div>
+                  <input type="text" class="form-control" id="resourceUrl" placeholder="https://github.com/Blockchain-Learning-Group">
+                </div>
+
+                <button class="btn btn-primary" id="submitResource" style="width:20%">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact bg-primary" id="contact">
+      <div class="container">
+        <h2>BLG Community Support!</h2>
+        <ul class="list-inline list-social">
+          <li class="list-inline-item social-twitter">
+            <a href="https://twitter.com/BlockchainLG">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-github">
+            <a href="https://github.com/Blockchain-Learning-Group">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-slack">
+            <a href="https://join.slack.com/t/blockchainlearning/shared_invite/MjIyMzIyODMxMjE3LTE1MDIwNDI5NTYtZWNlZjI2ZmVmNQ">
+              <i class="fa fa-slack"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2017 Blockchain Learning Group Inc. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
+
+<!-- Modal Windows -->
+<!-- URL is incorrect -->
+<div id="urlIncorrectModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Input Error</h4>
+      </div>
+      <div class="modal-body">
+        <p><strong>A valid URL is requried.</strong> </br> Please enter in the following format: https://url, </br> ie. https://github.com/Blockchain-Learning-Group.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Successful submission -->
+<div id="successModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Transaction Successful!</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          <strong>Thank you for your contribution!</strong>
+          </br>
+          Here is your transction hash:
+        </p>
+        <p id="txHash"></p>
+        <p>View your transaction and all other resources at the <a href="#" >BLG community hub.</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

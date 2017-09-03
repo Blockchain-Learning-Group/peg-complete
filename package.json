@@ -1,5 +1,5 @@
 {
-  "name": "blg-community-hub",
+  "name": "dapp-dev-fundamentals-complete-peg",
   "version": "0.0.1",
   "license": "TBD",
   "private:": false,
@@ -7,11 +7,7 @@
     "express": "^4.15.4",
     "web3": "0.20.0"
   },
-  "scripts": {
-    "addUsers": "node ./scripts/addUsers.js",
-    "addResources": "node ./scripts/addResources.js",
-    "testSetup": "node ./scripts/testSetup.js"
-  },
+  "scripts": {},
   "engines": {
     "node": ">=8"
   }

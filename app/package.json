@@ -1,5 +1,5 @@
 {
-  "name": "blg-community-hub",
+  "name": "dapp-dev-fundamentals-complete-peg",
   "version": "0.0.1",
   "license": "TBD",
   "private:": false,
@@ -8,8 +8,7 @@
     "web3": "0.20.0"
   },
   "scripts": {
-    "start": "node ./server.js",
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "start": "node ./server.js"
   },
   "engines": {
     "node": ">=8"
